@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <p>membuat judul pada web</p> -->
+    <title>Belajar Membuat Form </title>
+</head>
+<body>
+    <!-- <p>membuat pengumpulan data kemana data form akan dikirim</p> -->
+    <form action=" formulir.html" method="get">
+    <!-- <p>Menentukkan maksimum jumlah karakter yang diterima oleh server</p>-->
+    Nama: <input type="text" name="nama" value="Nama Kamu" />
+<br />
+    <!-- <p>Menentukkan maksimum jumlah karakter yang diterima oleh server</p>-->
+    Password: <input type="password" name="password" />
+<br />
+    <!--<p>namun user hanya bisa memilih satu diantara pilihan group radio</p>-->
+    Jenis Kelamin :
+    <input type="radio" name="jenis_kelamin" value="laki-laki" checked />
+    Laki - Laki
+    <input type="radio" name="jenis_kelamin" value="perempuan" />
+    Perempuan
+<br />
+    <!--<p>inputan berupa checkbox yang dapat diceklist atau di centang oleh user.</p>-->
+    Hobi: <input type="checkbox" name="hobi_baca" /> Membaca Buku
+    <input type="checkbox" name="hobi_nulis" checked /> Menulis
+    <input type="checkbox" name="hobi_mancing" /> Memancing
+<br />
+<!--<p> digunakan untuk inputan yang telah tersedia nilainya, dan user hanya dapat memilih dari nilai yang ada. </p>-->
+    Asal Kota:
+<select name="asal_kota" >
+    <option value="Kota Jakarta"> Jakarta</option>
+    <option>Bandung</option>
+    <option value="Kota Semarang" selected>Semarang</option>
+</select>
+<br />
+    <!--<p>pada dasarnya sama dengan input type text, namun ini bisa berisi banya baris.</p>-->
+    komentar anda :
+    <textarea name="komentar" rows="5" cols="20">
+    Silahkan katakan isi hati anda
+    </textarea>
+<br />
+    <!--<p>digunakan untuk menampilkan tombol untuk memproses form</p>-->
+    <input type="submit" value="Mulai Proses!" >
+</form>
+</body>
+</html>

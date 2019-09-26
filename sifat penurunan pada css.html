@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--membuat judul pada web-->
+    <title>Contoh Inheritance dalam CSS</title>
+<!--menentukan tipe bahasa yang digunakan untuk style tersebut dan menyisipkan kode style atau css kedalam sebuah dokumen-->
+<!--membuat seluruh text di dalam tag <div> akan berwarna sesuai warna yang diinginkan dan ukuran font serta warna font-->
+    <style type="text/css">
+        div.satu {
+            border: 1px solid black;
+            color: blue;
+        }
+        div.dua {
+            border: 1px solid black;
+        }
+        p.dua {
+            border: inherit;
+        }
+</style>
+</head>
+<body>
+    <!--memanggil css div satu tanpa menuliskembali perintah kodingan-->
+    <div class="satu">
+        <p class="satu">
+            Kalimat ini tanpa <em class="satu">nilai property inherit</em> CSS
+        </p> <!--<em></em> digunakan untuk mengubah karakter tulisan menjadi miring dan memasukkan css div satu agar tulisan tetap mengikuti yang diinginkan-->
+    </div>
+<br />
+ <!--memanggil css div dua tanpa menuliskembali perintah kodingan-->
+    <div class="dua">
+        <p class="dua">
+            Kalimat ini menggunakan <em class="dua">nilai property inherit</em> CSS
+        </p> <!--<em></em> digunakan untuk mengubah karakter tulisan menjadi miring dan memasukkan css div satu agar tulisan tetap mengikuti yang diinginkan-->
+    </div>
+</body>
+</html>
